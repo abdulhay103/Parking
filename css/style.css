@@ -1,0 +1,605 @@
+
+/***********************************************************
+------------------Global css------------------------------
+***********************************************************/
+
+@import url(<link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap&subset=latin-ext" rel="stylesheet">);
+
+body{
+	padding: 0;
+	margin: 0;
+	font-size: 1.172vw;
+}
+
+.container{
+	max-width: 1024px;
+	margin: auto;
+
+}
+
+h2{
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	font-size: 2.6em;
+	color: #263238;
+}
+
+p{
+	font-family: 'Lato', sans-serif;
+	text-align: justify;
+	font-size: 1.125em;
+	line-height: 1.333;
+	color: #263238;
+
+}
+.categories a, input::placeholder, .contact_form button, .copy_right, .footer_section h2, .about p, .list_items li{
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	color: #fff;
+}
+
+
+/***********************************************************
+  ------------------Header------------------------------
+***********************************************************/
+header{
+	background-color: #1964AA;
+	/*position: sticky;*/
+	width: 100%;
+	min-height: 9%;
+	position: fixed;
+
+}
+
+.nav{
+	padding: 1% 0;
+
+}
+
+
+.logo{
+	float: left;
+	width: 25%;
+	padding: 0 3%;
+}
+.logo img {
+    width: 50%;
+}
+
+.icon{
+	float: right;
+	font-size: 230%;
+}
+
+.icon>a{
+	padding: 15px;
+	color: #fff;
+}
+.icon>a:hover{
+	padding: 15px;
+	color: #F7941E;
+}
+
+.carsour{
+	cursor: pointer;
+}
+ul.sub_menu {
+	position: absolute;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #1964AA;
+    position: fixed;
+    z-index: 50;
+    padding: 1% 0;
+    width: 100%;
+    display: none;
+}
+.sub_menu>li{
+	padding-left: 2%;
+}
+.sub_menu>li>a{
+	 text-decoration: none;
+	 font-size: 0.5em;
+	 color:#fff; 
+}
+.sub_menu>li>a:hover{
+	color: #F7941E;
+}
+
+/***********************************************************
+  ------------------ Home_1 ------------------------------
+***********************************************************/
+.home1{
+	width: 100%
+	height:auto;
+	background-color: #FFF;
+	display: block;
+}
+.logo-img{
+	text-align: center;
+	max-width: 695px;
+	max-height: 230px;
+	padding: 30px;
+
+}
+
+.logo-img img{
+	width: 100%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+
+.slogan_video{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.slogan{
+	max-width: 550px;
+	/*padding: 3%;*/
+}
+
+.mcp, .payment{
+	font-family: 'Lato', sans-serif;
+	font-size: 1.91875em;
+	line-height: 1.73;
+	font-weight: 500;
+}
+
+.mcp{
+	color: #1964AA;
+}
+
+.payment{
+	color: #E85933;
+}
+
+.video{
+	max-width: 474px;
+}
+.video img{
+	max-width: 100%;
+}
+
+
+/***********************************************************
+  -------------- On_Street_Parking ------------------------
+***********************************************************/
+
+.on_street_parking{
+	background-color: #EBF6FF;
+	max-height: 542px;
+	overflow: hidden;
+}
+
+.on_street_parking h2{
+	padding: 3% 0;
+	margin: 0 0 0 12%;
+}
+
+.parking_zone{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.parking_rule{
+	max-width: 490px;
+	margin-left: 12%;
+
+}
+.parking_place{
+	background: url(../img/tree.png) no-repeat center;
+	width: 697px;
+	position: relative;
+	z-index: -3;
+}
+
+.redcar{
+	position: absolute;
+    top: 28%;
+    left: 8%;
+    animation: RedCar 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-delay: 3s;
+}
+@keyframes RedCar{
+	 0% {
+    	-webkit-transform: translateY(268px) translateX(-445px);
+        transform: translateY(268px) translateX(-445px);
+  }
+  100% {
+    	-webkit-transform:  translateY(9px) translateX(-15px);
+        transform:  translateY(9px) translateX(-15px);
+  }
+} 
+.whitecar{
+	position: absolute;
+    top: -10%;
+    left: 35%;
+     animation: RedCar 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.parking_rule p{
+	margin-top: 0;
+	font-size: 1.125em;
+
+}
+
+
+
+/***********************************************************
+  -------------- Off_Street_Parking ------------------------
+***********************************************************/
+
+.off_street_parking{
+	background-color: #FCECDD;
+	width: 100%;
+	position: relative;
+	z-index: -1;
+}
+
+.pushright{
+	margin-right:12%;
+}
+.pushright h2{
+	text-align: right;
+	padding: 4% 0 2% 0;
+	margin: 0;
+}
+.parking_animation{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.animation{
+	background: no-repeat center top;
+	width: 840px;
+	height: 500px;
+
+}
+.bg_parkingplace2{
+	width: 100%;
+}
+.blue_car_eliments{
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+
+
+.light{
+	position: absolute;
+	width: 14%;
+	top: 45%;
+	left: 64%;
+	animation: Light 1.5s forwards;
+	opacity: 0;
+	animation-iteration-count: 2;
+}
+@keyframes Light{
+	 0% {
+	 	opacity: 1;
+  }
+  100% {
+  	opacity: 0;
+  }
+
+}
+
+.lock{
+	position: absolute;
+	width: 15%;
+    top: 52%;
+    left: 59%;
+   	animation: Lock 5s linear;
+    transform-origin: 0% 0%;
+    animation-delay: 2s;
+    z-index: 40;
+}
+
+@keyframes Lock{
+	0%{
+		transform: rotate(0deg);
+	}
+	40%{
+		transform: rotate(-90deg);
+		width:15%;
+	}
+	60%{
+		transform: rotate(-90deg);
+		width:15%;
+	}
+	100%{
+		transform: rotate(0deg);
+	}
+}
+.blue_car{
+	position: absolute;
+	width: 27%;
+    top: 21%;
+    left: 76%;
+    animation: BlueCar 7s forwards;
+    animation-delay: 4s;
+    transform-origin: 0% 0%;
+    z-index: 10;
+}
+
+@keyframes BlueCar{
+	0% { top:21%; left: 76%; -webkit-transform:rotate(0deg); }
+    60% {top: 71%; left: 30%; -webkit-transform:rotate(12deg); }
+    100% {top: 43%; left: 34%; -webkit-transform:rotate(92deg); }
+}
+.orrange_car{
+	position: absolute;
+	width: 21%;
+    top: 29%;
+    left: 26%;
+    animation: OrrangeCar 5s forwards;
+}
+@keyframes OrrangeCar{
+	0% { top:72%; left:42%;}
+    100% {top: 29%; left: 26%;}
+}
+.pink_car{
+	position: absolute;
+	width: 24%;
+    top: 58%;
+    left: -3%;
+    animation: PinkCar 5s forwards;
+}
+@keyframes PinkCar{
+	0% { top:96%; left:11%;}
+    100% {top: 58%; left: -3%;}
+}
+
+.osp_text{
+	max-width: 340px;
+	z-index: 10;
+}
+
+
+/***********************************************************
+  ------------------ PARKING LOCATOR -----------------------
+***********************************************************/
+
+.parking_map{
+	margin-top: 5%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+
+.parking_commitment {
+	max-width: 590px;
+
+}
+.parking_commitment h2{
+	margin: 0;
+}
+
+.parking_commitment p{
+	max-width: 500px;
+}
+.map{
+	max-width: 434px;
+}
+.map img{
+	max-width: 100%;
+	/*max-height: 490px;*/
+}
+
+
+/***********************************************************
+  ------------------ FOOTER_SECTION ----------------------
+***********************************************************/
+
+.footer_section{
+	background-color: #1964AA;
+	min-height: 540px;
+}
+.footer_section a img{
+	margin: 4% 0 2% 0;
+}
+.footer_section h2{
+	max-width: 500px;
+	font-size: 1.25em;
+}
+.footer{
+	justify-content: space-between;
+	flex-wrap: wrap;
+	display: flex;
+}
+
+.about, .categories{
+	max-width: 200px;
+}
+.contact_form{
+	max-width: 340px;
+}
+
+.about p{
+	text-align: unset;
+	font-size:  0.875em;
+}
+.about span{
+	color: #ec9331;
+}
+.categories ul{
+	margin: 0;
+	padding: 0;
+}
+.categories li{
+list-style: none;
+}
+
+
+.categories a{
+	text-decoration: none;
+	font-size: 0.875em;
+}
+.categories a:hover{
+	color: #f0912f;
+}
+.contact_form input{
+	margin-bottom: 15px;
+	border-radius: 4px;
+	width: 100%;
+	height: 36px;
+}
+.contact_form input::placeholder{
+	color: #a0a0a0;
+	padding: 10px;
+}
+.contact_form button{
+	background-color: #fff;
+	border-radius: 4px;
+	padding: 2% 6%;
+}
+.contact_form a{
+	text-decoration: none;
+	color: #a0a0a0;
+}
+.contact_form a:hover{
+	color: #ec9331;
+}
+.contact_form form{
+	text-align: right;
+	width: 100%;
+}
+.copy_right{
+	font-size: 0.875em;
+}
+
+
+/***********************************************************
+  ---------------------CONTACT_PAGE ----------------------
+***********************************************************/
+.contact{
+	background-color: #fdf4ea;
+}
+.contact_form_and_img{
+	justify-content: space-between;
+	display: flex;
+	flex-wrap: wrap;
+}
+.contact_form{
+	max-width: 524px;
+	margin-top: 5%;
+}
+.contact_img{
+	margin-top: 30px;
+	margin-top: 10%;
+}
+.free_text{
+	padding-bottom: 15%;
+}
+.c_us a{
+	color:#1964aa;
+	font-weight: bolder;
+}
+
+/***********************************************************
+  -----------------OFF_STREET_PRKING_PAGE ------------------
+***********************************************************/
+
+
+section.off_street_park {
+	background-color: #fdf4ea;
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: 536px;
+}
+
+.osp_animation > img {
+    position: absolute;
+    width: 100%;
+}
+
+.osp_animation  h2{
+	padding-top: 3%;
+	margin: 0;
+	z-index: 10;
+	position: absolute;
+}
+.car_and_eliments{
+	width: 100%;
+	height: 600px;
+
+}
+.lock2{
+	position: absolute;
+	top: 60%;
+    left: 46%;
+    animation: Lock 4s linear;
+    transform-origin: 0% 0%;
+    animation-delay: 2s;
+    z-index: 40;
+}
+
+
+.light2{
+	position: absolute;
+	top: 56%;
+    left: 51%;
+    animation: Light 1.5s forwards;
+	opacity: 0;
+	animation-iteration-count: 1;
+	animation-delay: 1.5s;
+}
+.blue_car2{
+	position: absolute;
+	top: 0%;
+    left: 78%;
+    animation: BlueCarS 8s forwards;
+    /*animation-delay: 4s;*/
+    transform-origin: 0% 0%;
+    z-index: 10;
+}
+@keyframes BlueCarS{
+	0% {top: 0%; left: 78%; -webkit-transform:rotate(0deg); }
+	25% {top: 30%; left: 60%; -webkit-transform:rotate(0deg); }
+	45% {top: 30%; left: 60%; -webkit-transform:rotate(0deg); }
+    75% {top: 82%; left: 26%; -webkit-transform:rotate(0deg); }
+    100% {top: 54%; left: 26%; -webkit-transform:rotate(92deg); }
+}
+.yellow_and_green_car{
+	position: absolute;
+	top: 40%;
+    left: 22%;
+}
+
+.greencar{
+	position: absolute;
+	bottom: 35%;
+	right: 130%;
+	width: 100%;
+}
+.greencar img{
+	position: absolute;
+    width: 100%;
+}
+
+
+.increase_revenues{
+	background-color: #dde8f2;
+	padding: 0;
+}
+.ir_operator{
+	text-transform: uppercase;
+}
+
+.list_items{
+	padding-left: 12%;
+}
+.list_items li{
+    font-size: 1.125em;
+    list-style: none;
+    color: #263238;
+    margin: 0;
+    line-height: 2;
+}
